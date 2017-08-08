@@ -1,0 +1,44 @@
+spring: 
+  profiles:
+    active: dev
+  datasource:
+    druid: 
+      username: root
+      password: Clannad
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+#以秒为单位 必须是60的倍数 否则会与 实际设置的有误差
+server:
+  session:
+    timeout: 300
+mybatis: 
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    use-generated-keys: true
+    use-column-label: true
+    map-underscore-to-camel-case: true
+endpoints:
+#sensitive全局设置 是否敏感 true:敏感 false:不敏感 
+#https://segmentfault.com/a/1190000004318360?_ea=568366#articleHeader1
+  sensitive: false
+  #全局设置 默认所有的启用
+  #enabled: true
+  health:
+    sensitive: false
+    enabled: false
+  mappings:
+  #是否启用 true是启用则可以用该功能
+    enabled: true
+    #可改变访问路径
+    #path: /kd
