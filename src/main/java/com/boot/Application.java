@@ -2,8 +2,10 @@ package com.boot;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.actuate.endpoint.Endpoint;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+//默认会扫描启动类包下所有的类 所以 bean,controller,mapper等包都会被扫描
 @SpringBootApplication
 //一定要扫描mapper 不然会找不到mapper
 @MapperScan(basePackages = "com.boot.mapper")

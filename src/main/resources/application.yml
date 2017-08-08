@@ -31,6 +31,7 @@ mybatis:
 endpoints:
 #sensitive全局设置 是否敏感 true:敏感 false:不敏感 
 #https://segmentfault.com/a/1190000004318360?_ea=568366#articleHeader1
+#http://javabeat.net/spring-boot-actuator/
   sensitive: false
   #全局设置 默认所有的启用
   #enabled: true
@@ -42,3 +43,15 @@ endpoints:
     enabled: true
     #可改变访问路径
     #path: /kd
+#给actuator设置一个查看权限
+management: 
+  port: 9992
+  context-path: /manager
+  security:
+    enabled: true
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: admin

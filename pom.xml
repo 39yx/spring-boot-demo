@@ -19,15 +19,17 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<!-- 环境监控 -->
-		 <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-		<!-- 暂时不清楚 下面的和上面的有啥区别 rest 包含 web 只知道 -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency> -->
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- 暂时不清楚 下面的和上面的有啥区别 rest 包含 web 只知道 -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-rest</artifactId> 
+			</dependency> -->
 		<!-- @ConfigurationProperties注解支持 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
