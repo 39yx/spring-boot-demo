@@ -1,0 +1,41 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.boot.starter.bean.Person",
+      "name": "personboot.starter",
+      "type": "com.boot.starter.bean.Person"
+    },
+    {
+      "sourceType": "com.boot.starter.bean.Person",
+      "name": "personboot.starter.children",
+      "type": "com.boot.starter.bean.PersonChilden"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.boot.starter.bean.Person",
+      "name": "personboot.starter.name",
+      "description": "名字哦",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boot.starter.bean.Person",
+      "name": "personboot.starter.age",
+      "type": "java.lang.String",
+      "deprecation": "年龄哦 虽然是字符串"
+    },
+    {
+      "sourceType": "com.boot.starter.bean.PersonChilden",
+      "name": "personboot.starter.children.name",
+      "description": "子内容的名名字",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boot.starter.bean.PersonChilden",
+      "name": "personboot.starter.children.age",
+      "description": "这个年龄是Integer类型",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

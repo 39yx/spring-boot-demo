@@ -1,0 +1,9 @@
+server: 
+  port: 8888
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://localhost:9999/eureka/
+spring: 
+  application: 
+    name: shana

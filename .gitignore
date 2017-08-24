@@ -1,0 +1,12 @@
+.settings/
+*/.apt_generated/
+*/target/
+*.classpath
+*.project
+*.log
+*.factorypath
+*.springBeans
+/.metadata/
+/.recommenders/
+/RemoteSystemsTempFiles/
+/Servers/
