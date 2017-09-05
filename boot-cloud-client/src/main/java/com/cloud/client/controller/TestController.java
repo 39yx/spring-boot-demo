@@ -1,6 +1,7 @@
 package com.cloud.client.controller;
 
 import java.util.concurrent.TimeUnit;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,6 @@ public class TestController {
 				e.printStackTrace();
 			}
 		}
-		return port + " -->你要的名字哦: " + name;
+		return port + " -->你要的名字哦: " + name + "-----------<a href=\"getName?name=kkk" + new Random().nextInt(9) + "\">你点下试试!</a>";
 	}
 }
