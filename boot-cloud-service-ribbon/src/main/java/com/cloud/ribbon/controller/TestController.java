@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cloud.ribbon.service.TestService;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/testCon")
 public class TestController {
 	
 	@Autowired
@@ -16,6 +16,6 @@ public class TestController {
 	
 	@RequestMapping("/getName")
 	public String getName(@RequestParam("name")String name) {
-		return testService.getName(name);
+		return testService.getName(name.concat("\t---\tribbon"));
 	}
 }

@@ -7,3 +7,10 @@ eureka:
 spring: 
   application: 
     name: ribbon->shana
+hystrix:  
+  command:  
+    default:  
+      execution:  
+        isolation:  
+          thread:  
+            timeoutInMilliseconds: 30000 #缺省为1000  
