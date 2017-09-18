@@ -17,7 +17,7 @@ public class TestController {
 	
 	@RequestMapping("/getName")
 	public String aa(@RequestParam("name") String name,@RequestParam(value = "sleep",defaultValue = "1",required = false) Long sleep) {
-		if(name.equals("aa")) {
+		if(name.contains("aa")) {
 			throw new RuntimeException("抛异常");
 		}
 		if(name.contains("kk")){

@@ -15,7 +15,7 @@ public class TestController {
 	private TestService testService;
 	
 	@RequestMapping("/getName")
-	public String getName(@RequestParam("name")String name) {
-		return testService.getName(name.concat("\t---\tribbon"));
+	public String getName(@RequestParam("name")String name,@RequestParam(value = "sleep",defaultValue = "1",required = false) Long sleep) {
+		return testService.getName(name.concat("\t---\tribbon"),sleep);
 	}
 }

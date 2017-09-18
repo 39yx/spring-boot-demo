@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/test")
 public interface TestService {
 	@RequestMapping("/getName")
-	String getName(@RequestParam("name")String name);
+	String getName(@RequestParam("name")String name,@RequestParam(value = "sleep",defaultValue = "1",required = false) Long sleep);
 }

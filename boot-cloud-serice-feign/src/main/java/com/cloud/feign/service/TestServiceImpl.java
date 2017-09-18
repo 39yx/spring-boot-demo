@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestServiceImpl implements TestService {
 
 	@Override
-	public String getName(String name) {
+	public String getName(String name,Long sleep) {
 		return "你得到是一个错误的名字 : " + name;
 	}
 
